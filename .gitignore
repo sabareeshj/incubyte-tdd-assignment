@@ -1,0 +1,9 @@
+# Node modules
+node_modules/
+
+# IDE/Editor directories and files
+.vscode/
+
+# Jest cache and coverage reports
+jest-cache/
+jest-html-reporters-*.html
