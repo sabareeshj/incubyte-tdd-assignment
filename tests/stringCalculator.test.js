@@ -30,4 +30,9 @@ describe('String Calculator', () => {
     expect(add("//|\n2|3|4")).toBe(9);
   });
 
+  test('negative numbers throw exception', () => {
+    expect(() => add("1,-2,3")).toThrow("negatives not allowed: -2");
+    expect(() => add("2,-4,-5")).toThrow("negatives not allowed: -4,-5");
+  });
+
 });
