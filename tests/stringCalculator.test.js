@@ -49,4 +49,15 @@ describe('String Calculator', () => {
     expect(add("//[***][%%]\n1***2%%3")).toBe(6);
   });
 
+  test('multiple custom delimiters with no numbers', () => {
+    expect(add("//[***][%%]\n")).toBe(0);
+  });
+
+  test('multiple delimiters of mixed lengths with normal-sized numbers', () => {
+    expect(add("//[*][%%%]\n1*2%%%3")).toBe(6); // 1 + 2 + 3 = 6
+  });
+
+  test('custom delimiter defined but no numbers provided', () => {
+    expect(add("//;\n")).toBe(0);
+  });
 });
