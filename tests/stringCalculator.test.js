@@ -41,4 +41,8 @@ describe('String Calculator', () => {
     expect(add("999,1000,1001,2")).toBe(999+1000+2);
   });
 
+  test('delimiters can be of any length', () => {
+    expect(add("//[***]\n1***2***3")).toBe(6);
+  });
+
 });
