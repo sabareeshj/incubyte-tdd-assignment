@@ -1,0 +1,11 @@
+{
+  "name": "incubyte-tdd-assignment",
+  "version": "1.0.0",
+  "description": "Incubyte String Calculator TDD Kata",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC"
+}
