@@ -45,4 +45,8 @@ describe('String Calculator', () => {
     expect(add("//[***]\n1***2***3")).toBe(6);
   });
 
+  test('multiple delimiters with longer length', () => {
+    expect(add("//[***][%%]\n1***2%%3")).toBe(6);
+  });
+
 });
