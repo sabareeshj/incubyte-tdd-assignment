@@ -4,11 +4,12 @@
   "description": "Incubyte String Calculator TDD Kata",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "jest"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "jest": "^29.7.0"
-  }
+  },
+  "type": "module"
 }
