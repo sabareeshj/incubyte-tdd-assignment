@@ -16,4 +16,9 @@ describe('String Calculator', () => {
     expect(add("2,3")).toBe(5);
   });
 
+  test('unknown amount of numbers', () => {
+    expect(add("1,2,3")).toBe(6);
+    expect(add("2,3,4,5")).toBe(14);
+  });
+
 });
