@@ -15,9 +15,14 @@ function add(numbers) {
         delimiter = ',';
     }
 
-    const nums = numbers.split(delimiter).map(num => parseInt(num, 10));
+
+    const nums = numbers.split(delimiter)
+        .map(num => parseInt(num, 10))
+        .filter(n => !isNaN(n))
+        .filter(n => n <= 1000);
+        
     const negatives = nums.filter(n => n < 0);
-    
+
     if (negatives.length > 0) {
         throw new Error(`negatives not allowed: ${negatives.join(",")}`);
     }
